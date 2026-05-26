@@ -64,6 +64,37 @@ Repository:
 
 https://github.com/digitalguru3228-ai/soham-portfolio
 
+## Deployment
+
+### Option 1: Render
+
+1. Create a new Web Service on Render
+2. Connect your GitHub repository
+3. Set the build command to:
+
+```bash
+npm install
+```
+
+4. Set the start command to:
+
+```bash
+node server.js
+```
+
+5. Add your environment variables in Render:
+
+- `PORT`
+- `SMTP_HOST`
+- `SMTP_PORT`
+- `SMTP_USER`
+- `SMTP_PASS`
+- `EMAIL_TO`
+
+### Option 2: Vercel
+
+Vercel is best for frontend-only deployments, so for this project you should deploy the backend on Render or a similar Node host. If you only want the frontend, you can host `FUTURE PORTFOLIO.html.html` directly on Vercel, but the form backend will still need a server.
+
 ## Notes
 
 - `.env` and `data/` are ignored and should not be committed
