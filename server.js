@@ -7,7 +7,7 @@ const nodemailer = require('nodemailer');
 
 const PORT = process.env.PORT || 3000;
 const ROOT_DIR = __dirname;
-const HTML_FILE = path.join(ROOT_DIR, 'FUTURE PORTFOLIO.html.html');
+const HTML_FILE = path.join(ROOT_DIR, 'index.html');
 const DATA_DIR = path.join(ROOT_DIR, 'data');
 const SUBMISSIONS_FILE = path.join(DATA_DIR, 'submissions.json');
 
@@ -158,7 +158,7 @@ const server = http.createServer((req, res) => {
     return;
   }
 
-  if (req.method === 'GET' && (pathname === '/' || pathname.endsWith('/FUTURE PORTFOLIO.html.html'))) {
+  if (req.method === 'GET' && (pathname === '/' || pathname.endsWith('/index.html'))) {
     serveHtml(res);
     return;
   }
