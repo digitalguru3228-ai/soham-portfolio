@@ -91,9 +91,11 @@ node server.js
 - `SMTP_PASS`
 - `EMAIL_TO`
 
+6. After deployment, replace `https://your-backend-url.com` in [index.html](index.html) with your actual Render URL.
+
 ### Option 2: Vercel
 
-Vercel is best for frontend-only deployments, so for this project you should deploy the backend on Render or a similar Node host. If you only want the frontend, you can host `FUTURE PORTFOLIO.html.html` directly on Vercel, but the form backend will still need a server.
+Vercel is best for frontend-only deployments, so for this project you should deploy the backend on Render or a similar Node host. If you only want the frontend, you can host `index.html` directly on Vercel, but the form backend will still need a server and the `API_BASE_URL` in [index.html](index.html) must point to it.
 
 ## Notes
 
