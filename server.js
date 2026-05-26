@@ -173,10 +173,6 @@ const server = http.createServer((req, res) => {
 
 ensureDataFile();
 
-const PORT = process.env.PORT || 3000;
-
-ensureDataFile();
-
 server.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
 });
