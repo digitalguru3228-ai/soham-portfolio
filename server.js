@@ -29,9 +29,8 @@ function ensureDataFile() {
 
 function sendJson(res, statusCode, payload) {
   res.writeHead(statusCode, {
-    'Content-Type': 'https://vercel.com/soham-hasans-projects/soham-portfolio/BZe77rvB5xA79RDmNQofLF2PUGCN', 
-    'Access-Control-Allow-Methods': 'OPTIONS, POST, GET',
-    'Access-Control-Allow-Headers': 'Content-Type'
+    'Content-Type': 'application/json',
+    'Access-Control-Allow-Origin': '*'
   });
   res.end(JSON.stringify(payload));
 }
