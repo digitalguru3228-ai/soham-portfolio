@@ -87,7 +87,7 @@ async function sendContactEmail(submission) {
  const transporter = nodemailer.createTransport({
   host: SMTP_HOST,
   port: SMTP_PORT || 465,
-  secure: true, // Use SSL
+  secure: tr,
   auth: {
     user: SMTP_USER,
     pass: SMTP_PASS

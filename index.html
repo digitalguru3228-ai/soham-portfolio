@@ -742,7 +742,7 @@ async function sendMsg(event){
   status.style.color='rgba(0,212,255,.8)';
 
   try{
-    const res=await fetch(`${API_BASE_URL}/api/contact`, {
+    const res = await fetch('/api/contact', {
       method:'POST',
       headers:{'Content-Type':'application/json'},
       body: JSON.stringify(payload)
