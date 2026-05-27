@@ -715,11 +715,9 @@ setTimeout(checkReveals,200);
 // ══════════════════════════════════════════
 // CONTACT FORM
 // ══════════════════════════════════════════
-const API_BASE_URL = window.location.hostname === 'localhost'
-  ? ''
-  : 'https://soham-portfolio-c971.onrender.com/';
+const API_BASE_URL = "https://soham-portfolio-c971.onrender.com";
 
-async function sendMsg(event){
+async function sendMsg(event){  
   if(event) event.preventDefault();
 
   const form=document.getElementById('contactForm');
